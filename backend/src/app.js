@@ -8,7 +8,8 @@ const app = express()
 app.set("trust proxy", 1);
 const allowedOrigins = [
   "http://localhost",
-  "http://localhost:3000"
+  "http://localhost:3000",
+  "http://13.62.6.187"
 ];
 app.use(cors({
     origin:allowedOrigins,
