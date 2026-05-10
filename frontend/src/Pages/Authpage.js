@@ -31,7 +31,7 @@ const Authpage = () => {
           }
           ,{withCredentials:true})
         console.log(response.data.data)
-        toast.success("User Registered Successfully")
+        toast.success("User Registered Successfully deployed")
         setName("")
         setEmail("")
         setPassword("")
