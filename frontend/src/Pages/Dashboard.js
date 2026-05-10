@@ -38,7 +38,7 @@ const dummyLeads = [
    const handleLogout = async() => {
   try {
     setLoading(true)
-    const response = await axios.get("http://localhost/api/api/v1/admin/logoutuser",{withCredentials:true})
+    const response = await axios.get("/api/api/v1/admin/logoutuser",{withCredentials:true})
     console.log(response.data)
     toast.success("User Logged Out Successfully")
     navigate("/login")
@@ -52,14 +52,14 @@ const dummyLeads = [
 
   useEffect(()=>{
     (async()=>{
-      const response = await axios.get("http://localhost/api/api/v1/admin/getuser",{withCredentials:true})
+      const response = await axios.get("/api/api/v1/admin/getuser",{withCredentials:true})
       console.log(response.data.data)
       setuser(response.data.data)
     })()
   },[])
   useEffect(()=>{
     (async()=>{
-      const response = await axios.get("http://localhost/api/api/v1/admin/getalluser",{withCredentials:true})
+      const response = await axios.get("/api/api/v1/admin/getalluser",{withCredentials:true})
       console.log(response.data.data)
       setalluser(response.data.data)
     })()

@@ -23,7 +23,7 @@ const Authpage = () => {
       //   formdata.append("password",password)
         
       try {
-        const response = await axios.post("http://localhost/api/api/v1/admin/signup",
+        const response = await axios.post("/api/api/v1/admin/signup",
           {
             name:name,
             email:email,
