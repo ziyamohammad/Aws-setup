@@ -3,14 +3,12 @@ version: '3.9'
 services:
   frontend:
     image: mohammadziya1/frontend-image
-    container_name: frontend
     restart: always
     # ports:
     #   - "4000:80"
 
   backend:
     image: mohammadziya1/backend-image
-    container_name: backend
     depends_on:
       - mongo
     env_file:
@@ -27,7 +25,6 @@ services:
 
   nginx:
     image: nginx
-    container_name: nginx
     ports:
       - "80:80"
     volumes:
