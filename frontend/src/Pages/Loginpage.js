@@ -21,7 +21,7 @@ const Loginpage = () => {
                 password:password
             },{withCredentials:true})
             console.log(response.data.data)
-            toast.success("User Login Successfull")
+            toast.success("User Login Successfull deployed")
             setEmail("")
             setPassword("")
             navigate("/dashboard")
