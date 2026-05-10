@@ -40,7 +40,7 @@ const dummyLeads = [
     setLoading(true)
     const response = await axios.get("/api/api/v1/admin/logoutuser",{withCredentials:true})
     console.log(response.data)
-    toast.success("User Logged Out Successfully")
+    toast.success("User Logged Out Successfully deployed")
     navigate("/login")
   } catch (error) {
     toast.error("user cannot logout")
